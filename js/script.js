@@ -2,19 +2,19 @@
 
 //Stampare i numeri da 1 a 100
 for (var i = 1; i <= 100; i++) {
-  var numero = i
   // Se numero % 3 == 0 && numero % 5 == 0 stampo FizzBuzz
-  if (numero % 3 == 0 && numero % 5 == 0) {
-    numero = "FizzBuzz";
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log("FizzBuzz");;
   }
   // Se numero % 3 == 0 stampo Fizz
-  else if (numero % 3 == 0){
-
-    numero = "Fizz";
+  else if (i % 3 == 0){
+    console.log("Fizz");;
   }
   // Se numero % 5 == 0 stampo Buzz
-  else if (numero % 5 == 0){
-    numero = "Buzz"
+  else if (i % 5 == 0){
+    console.log("Buzz");
   }
-  console.log(numero);
+  else {
+    console.log(i);
+  }
 };
